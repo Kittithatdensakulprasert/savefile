@@ -14,46 +14,22 @@ import lombok.Data;
 @Table(name="student")
 public class Student {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id ; 
-	
-	@Column(name = "user_name", nullable = false)
-	private String userName ; 
-	
-	@Column(name = "password", nullable = false)
-	private String password ;
-	
-	@Column(name = "eng_name", nullable = false)
-	private String engname ; 
-	
-	@Column(name = "email", nullable = false)
-	private String email ; 
-	
-	@Column(name = "faculty", nullable = false)
-	private String faculty ; 
-	
-	@Column(name = "type", nullable = false)
-	private String type ;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id ; 
 
-	public String getEmail() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Column(name = "eng_name", nullable = false)
+    private String engName ; 
 
-	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Column(name = "email", nullable = false)
+    private String email ;
 
-	public void setName(String name) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Column(name = "faculty")
+    private String faculty ; 
 
-	public void setEmail(String email2) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Column(name = "type")
+    private String type ;
 
+    @Column(name = "user_name")
+    private String userName ;
 }

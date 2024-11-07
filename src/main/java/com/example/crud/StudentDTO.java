@@ -1,31 +1,52 @@
 package com.example.crud;
 
 public class StudentDTO {
-    private String name;
-    private String email;
+   private String userName;
+   private String type;
+   private String engName;
+   private String email;
+   private String faculty;
 
-    // Constructor, Getter, Setter
+   public StudentDTO() {
+   }
 
-    public StudentDTO() {}
+   public String getUserName() {
+      return this.userName;
+   }
 
-    public StudentDTO(String name, String email) {
-        this.name = name;
-        this.email = email;
-    }
+   public void setUserName(String userName) {
+      this.userName = userName;
+   }
 
-    public String getName() {
-        return name;
-    }
+   public String getType() {
+      return this.type;
+   }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+   public void setType(String type) {
+      this.type = type;
+   }
 
-    public String getEmail() {
-        return email;
-    }
+   public String getEngName() {
+      return this.engName;
+   }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+   public void setEngName(String engName) {
+      this.engName = engName;
+   }
+
+   public String getEmail() {
+      return this.email;
+   }
+
+   public void setEmail(String email) {
+      this.email = email;
+   }
+
+   public String getFaculty() {
+      return this.faculty;
+   }
+
+   public void setFaculty(String faculty) {
+      this.faculty = faculty;
+   }
 }
