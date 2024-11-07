@@ -34,7 +34,26 @@ public class Student {
 	private String faculty ; 
 	
 	@Column(name = "type", nullable = false)
-	private String type ; 
-	
-	
+	private String type ;
+
+	public String getEmail() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void setName(String name) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setEmail(String email2) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
